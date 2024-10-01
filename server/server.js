@@ -14,7 +14,9 @@ const io = socketIo(server, {
   },
 });
 
-app.use(cors());
+app.use(cors({
+	origin: 'https://bhageshghuge.github.io/Collaborative-Coding-Platform-Frontend'
+}));
 app.use(express.json());
 
 // Add this object to store room data
